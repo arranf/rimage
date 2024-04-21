@@ -52,12 +52,12 @@ let img =
 With default options
 
 ```
-use rimage::codecs::jpegli::JpegliJpegEncoder;
+use rimage::codecs::jpegli::JpegliDecoder;
 use zune_image::traits::EncoderTrait;
 # use zune_image::image::Image;
 # let img = Image::open("tests/files/jpg/f1t.jpg").unwrap();
 
-let mut encoder = JpegliJpegEncoder::new();
+let mut encoder = JpegliDecoder::new();
 
 encoder.encode(&img).unwrap();
 ```
