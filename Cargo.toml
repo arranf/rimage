@@ -50,7 +50,7 @@ build-binary = [
 # Enables utilization of threads
 threads = ["imagequant?/threads", "oxipng?/parallel"]
 # Enables metadata support
-metadata = ["dep:kamadak-exif"]
+metadata = ["dep:kamadak-exif", "zune-image/metadata"]
 
 # Enables resize operation
 resize = ["dep:fast_image_resize"]
